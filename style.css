@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #111114;
+}
+body #page-container {
+  width: 100%;
+  height: 100%;
+  padding-top: calc((100vh - 576px) / 2);
+}
+@keyframes hues {
+  0% {
+    filter: hue-rotate(0deg) saturate(1);
+  }
+  50% {
+    filter: hue-rotate(180deg) saturate(3);
+  }
+  100% {
+    filter: hue-rotate(360deg) saturate(1);
+  }
+}
+body #page-container #game-container {
+  position: relative;
+  width: 960px;
+  height: 576px;
+  margin: 0 auto;
+}
+body #page-container #game-container #ambient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #2b750f;
+}
+body #page-container #game-container #background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url("./img/background/transparent.png");
+}
+body #page-container #game-container #bottle {
+  position: absolute;
+  width: 192px;
+  height: 384px;
+  left: 408px;
+  top: 120px;
+}
+body #page-container #game-container #bottle .tile {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+body #page-container #game-container #bottle .tile.blue {
+  background-color: blue;
+}
+body #page-container #game-container #bottle .tile.red {
+  background-color: red;
+}
+body #page-container #game-container #bottle .tile.yellow {
+  background-color: yellow;
+}
+body #page-container #game-container .counter {
+  position: absolute;
+}
+body #page-container #game-container #win-lose-overlay {
+  position: relative;
+  z-index: 10;
+}
+body #page-container #game-container #win-lose-overlay div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body #page-container #game-container #magnifier {
+  position: absolute;
+  top: 288px;
+  left: 24px;
+  width: calc(13 * 24px);
+  height: calc(12 * 24px);
+}
+body #page-container #game-container #magnifier img.virus {
+  position: absolute;
+  width: 96px;
+  height: 72px;
+}
+body #page-container #game-container #pill-preview {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 480px;
+  width: 288px;
+  height: 144px;
+}
+body #page-container #game-container #pill-preview #mario {
+  position: absolute;
+  top: 48px;
+  left: 216px;
+  width: 216px;
+  height: 216px;
+  z-index: -1;
+}
+body #page-container #game-container #pill-preview div.element {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */
